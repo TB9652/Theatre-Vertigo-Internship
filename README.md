@@ -16,7 +16,7 @@ I implemented.
 * [Seed Production Database](#seed-production-database)
 ## Front End Stories
 * [Create Navbar](#create-navbar)
-* [Create Modal Partial View](#create-modal)
+* [Create Modal Partial View](#create-modal-partial-view)
 
 ### Seed Production Database
  This database was seeded with test data using code first migration.  The test data consisted for fifteen rows and eleven columns of data meant to be representative of the type of data you would expect to see on a theatre company's website.  Even though DateTime would format both a date and a time for each property within the database, I only wanted for date to be dispalyed for the opening/closing date and only time for the Matinee and Evening showtimes when displayed on the web page so I added code to alter the display format.
