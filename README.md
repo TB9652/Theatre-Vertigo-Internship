@@ -59,7 +59,7 @@ I implemented.
 
  Using the scaffolded NavBar as a template, I added the theater comapny's logo and made it a link back to the home page.  In the layout.cshtml file I moved the following code "@Styles.Render("~/Content/css")" so I could later over-ride the any bootstrap styling with my own CSS styling in the Site.css file then restructured the sacqffolded code so all navlinks were rendered in the same area of the navbar.  I added custom classes to apply CSS styling to the navbar.
  
- ![alt text](https://github.com/[TB9652]/[Theatre-Vertigo-Internship]/blob/[branch]/NavBar.png?raw=true)
+ ![NavBar](https://github.com/[TB9652]/[Theatre-Vertigo-Internship]/blob/[master]/NavBar.png?raw=true)
  
          <!DOCTYPE html>
          <html>
