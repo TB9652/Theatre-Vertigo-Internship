@@ -55,22 +55,22 @@ I implemented.
                             }                
             
 
-## Create Navbar for Shared Layout.cshtml
+### Create Navbar for Shared Layout.cshtml
  Using the scaffolded NavBar as a template, I added the theater comapny's logo and made it a link back to the home page.  In the layout.cshtml file I moved the following code "@Styles.Render("~/Content/css")" so I could later over-ride the any bootstrap styling with my own CSS styling in the Site.css file then restructured the sacqffolded code so all navlinks were rendered in the same area of the navbar.  I added custom classes to apply CSS styling to the navbar.
  
   <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Scripts.Render("~/bundles/modernizr")
-    @Styles.Render("~/Content/font-awesome.css")
-    @Styles.Render("~/Content/font-awesome.min.css")
-    @Styles.Render("~/Content/css")      @*This was moved down to allow for certain bootstrap styling to be over-ridden pertaining to the nav-links*@
+  <html>
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>@ViewBag.Title - My ASP.NET Application</title>
+      @Scripts.Render("~/bundles/modernizr")
+      @Styles.Render("~/Content/font-awesome.css")
+      @Styles.Render("~/Content/font-awesome.min.css")
+      @Styles.Render("~/Content/css")      @*This was moved down to allow for certain bootstrap styling to be over-ridden pertaining to the nav-links*@
 
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="navbar-header">
 
