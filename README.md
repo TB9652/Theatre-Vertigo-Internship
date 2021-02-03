@@ -18,36 +18,37 @@ I implemented.
 ### Seed Production Database
  This database was seeded with test data using code first migration.  The test data consisted for fifteen rows and eleven columns of data meant to be representative of the type of data you would expect to see on a theatre company's website.  Even though DateTime would format both a date and a time for each property within the database, I only wanted for date to be dispalyed for the opening/closing date and only time for the Matinee and Evening showtimes when displayed on the web page so I added code to alter the display format.
  
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+                        
+                            using System;
+                            using System.Collections.Generic;
+                            using System.ComponentModel.DataAnnotations;
+                            using System.Linq;
+                            using System.Web;
 
 
-namespace TheatreCMS2.Models
-{
-    public class Production
-    {
-        public int ProductionId { get; set; }
-        public string Title { get; set; }
-        public string Playwright { get; set; }
-        public string Description { get; set; }
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime OpeningDay { get; set; }
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime ClosingDay { get; set; }
-        public ProductionPhoto Default { get; set; }
-        [DataType(DataType.Time)]
-        [DisplayFormat(DataFormatString = "{0:hh:mm tt}", ApplyFormatInEditMode = true)]
-        public DateTime ShowtimeEve { get; set; }
-        [DataType(DataType.Time)]
-        [DisplayFormat(DataFormatString = "{0:hh:mm tt}", ApplyFormatInEditMode = true)]
-        public DateTime ShowtimeMat { get; set; }
-        public string TicketLink { get; set; }
-        public int Season { get; set; }
-        public bool IsCurrent { get; set; }
-    }
-}
+                            namespace TheatreCMS2.Models
+                            {
+                                public class Production
+                                {
+                                    public int ProductionId { get; set; }
+                                    public string Title { get; set; }
+                                    public string Playwright { get; set; }
+                                    public string Description { get; set; }
+                                    [DataType(DataType.Date)]
+                                    [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}", ApplyFormatInEditMode = true)]
+                                    public DateTime OpeningDay { get; set; }
+                                    [DataType(DataType.Date)]
+                                    [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}", ApplyFormatInEditMode = true)]
+                                    public DateTime ClosingDay { get; set; }
+                                    public ProductionPhoto Default { get; set; }
+                                    [DataType(DataType.Time)]
+                                    [DisplayFormat(DataFormatString = "{0:hh:mm tt}", ApplyFormatInEditMode = true)]
+                                    public DateTime ShowtimeEve { get; set; }
+                                    [DataType(DataType.Time)]
+                                    [DisplayFormat(DataFormatString = "{0:hh:mm tt}", ApplyFormatInEditMode = true)]
+                                    public DateTime ShowtimeMat { get; set; }
+                                    public string TicketLink { get; set; }
+                                    public int Season { get; set; }
+                                    public bool IsCurrent { get; set; }
+                                }
+                            }
