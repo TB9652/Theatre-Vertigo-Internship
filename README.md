@@ -58,39 +58,39 @@ I implemented.
 ### Create Navbar for Shared Layout.cshtml
  Using the scaffolded NavBar as a template, I added the theater comapny's logo and made it a link back to the home page.  In the layout.cshtml file I moved the following code "@Styles.Render("~/Content/css")" so I could later over-ride the any bootstrap styling with my own CSS styling in the Site.css file then restructured the sacqffolded code so all navlinks were rendered in the same area of the navbar.  I added custom classes to apply CSS styling to the navbar.
  
-  <!DOCTYPE html>
-  <html>
-  <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>@ViewBag.Title - My ASP.NET Application</title>
-      @Scripts.Render("~/bundles/modernizr")
-      @Styles.Render("~/Content/font-awesome.css")
-      @Styles.Render("~/Content/font-awesome.min.css")
-      @Styles.Render("~/Content/css")      @*This was moved down to allow for certain bootstrap styling to be over-ridden pertaining to the nav-links*@
+         <!DOCTYPE html>
+         <html>
+         <head>
+             <meta charset="utf-8" />
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <title>@ViewBag.Title - My ASP.NET Application</title>
+             @Scripts.Render("~/bundles/modernizr")
+             @Styles.Render("~/Content/font-awesome.css")
+             @Styles.Render("~/Content/font-awesome.min.css")
+             @Styles.Render("~/Content/css")      @*This was moved down to allow for certain bootstrap styling to be over-ridden pertaining to the nav-links*@
 
-      </head>
-      <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="navbar-header">
+             </head>
+             <body>
+               <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                   <div class="navbar-header">
 
-                <a href="@Url.Action("Index", "Home")">
-                    <img src="/Content/Images/cropped-TV_2transparent-1.png" />  @*This allows log to act as nav-link and acts as the Home button*@
-                </a>
+                       <a href="@Url.Action("Index", "Home")">
+                           <img src="/Content/Images/cropped-TV_2transparent-1.png" />  @*This allows log to act as nav-link and acts as the Home button*@
+                       </a>
 
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav" id="navLink-align">
-                        @*id added to over-ride bootstrap css and custom style nav-links*@
+                       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                           <div class="navbar-nav" id="navLink-align">
+                               @*id added to over-ride bootstrap css and custom style nav-links*@
 
-                        @*Custom class move-right added to over-ride bootstrap css and custom style nav-links*@
-                        @*@Html.ActionLink("Home", "Home", "Home")*@  @*Commented out in case change is decided*@
-                        @Html.ActionLink("About", "About", "Home", null, new { @class = "nav-item nav-link active move-right" })
-                        @Html.ActionLink("Ensemble", "Ensemble", "Home", null, new { @class = "nav-item nav-link active move-right" })   @*Link for Ensemble view.  Needs                                 Ensemble view created*@
-                        @Html.ActionLink("On Stage", "Index", "Production", null, new { @class = "nav-item nav-link active move-right" })   @* Link for OnStage view. *@
+                               @*Custom class move-right added to over-ride bootstrap css and custom style nav-links*@
+                               @*@Html.ActionLink("Home", "Home", "Home")*@  @*Commented out in case change is decided*@
+                               @Html.ActionLink("About", "About", "Home", null, new { @class = "nav-item nav-link active move-right" })
+                               @Html.ActionLink("Ensemble", "Ensemble", "Home", null, new { @class = "nav-item nav-link active move-right" })   @*Link for Ensemble view.  Needs                                 Ensemble view created*@
+                               @Html.ActionLink("On Stage", "Index", "Production", null, new { @class = "nav-item nav-link active move-right" })   @* Link for OnStage view. *@
 
-                        @Html.Partial("_LoginPartial")
+                               @Html.Partial("_LoginPartial")
 
-                    </div>
-                </div>
-            </div>
-        </nav>
+                           </div>
+                       </div>
+                   </div>
+               </nav>
