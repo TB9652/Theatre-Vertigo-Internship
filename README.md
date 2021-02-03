@@ -58,8 +58,7 @@ I implemented.
 ### Create Navbar
 
  Using the scaffolded NavBar as a template, I added the theater comapny's logo and made it a link back to the home page.  In the layout.cshtml file I moved the following code "@Styles.Render("~/Content/css")" so I could later over-ride the any bootstrap styling with my own CSS styling in the Site.css file then restructured the sacqffolded code so all navlinks were rendered in the same area of the navbar.  I added custom classes to apply CSS styling to the navbar.
- 
- ![Screenshot](NavBar.png)
+
  
          <!DOCTYPE html>
          <html>
@@ -97,3 +96,26 @@ I implemented.
                        </div>
                    </div>
                </nav>
+               
+               
+               .custom-container {
+               background-color: var(--main-bg-color);
+               padding-top: .8em;
+               padding-bottom: 2em;
+               -webkit-border-radius: .5em;
+               -moz-border-radius: .5em;
+               border-radius: .5em;
+               text-decoration: none;
+               border-style: outset;
+               border-color: var(--main-secondary-color);
+           }
+
+           h2 {
+               padding-top: .8em;
+               padding-bottom: .8em;
+           }
+
+           h2.cprod {
+               text-align:center;
+               color: var(--dark-color);
+           }
