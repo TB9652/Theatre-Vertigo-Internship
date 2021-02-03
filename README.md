@@ -15,8 +15,8 @@ I implemented.
 ## Back End Stories
 * [Seed Production Database](#seed-production-database)
 ## Front End Stories
-* [Create Navbar for Shared Layout.cshtml](#create-navbar-for-shared-layout.cshtml)
-* [Sorting Network Table](#sorting-network-table)
+* [Create Navbar](#create-navbar)
+* [Create Navbar](#sorting-network-table)
 
 ### Seed Production Database
  This database was seeded with test data using code first migration.  The test data consisted for fifteen rows and eleven columns of data meant to be representative of the type of data you would expect to see on a theatre company's website.  Even though DateTime would format both a date and a time for each property within the database, I only wanted for date to be dispalyed for the opening/closing date and only time for the Matinee and Evening showtimes when displayed on the web page so I added code to alter the display format.
@@ -56,7 +56,8 @@ I implemented.
                             }                
             
 
-### Create Navbar for Shared Layout.cshtml
+### Create Navbar
+
  Using the scaffolded NavBar as a template, I added the theater comapny's logo and made it a link back to the home page.  In the layout.cshtml file I moved the following code "@Styles.Render("~/Content/css")" so I could later over-ride the any bootstrap styling with my own CSS styling in the Site.css file then restructured the sacqffolded code so all navlinks were rendered in the same area of the navbar.  I added custom classes to apply CSS styling to the navbar.
  
          <!DOCTYPE html>
