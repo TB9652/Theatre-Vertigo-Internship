@@ -69,28 +69,28 @@ I implemented.
       @Styles.Render("~/Content/font-awesome.min.css")
       @Styles.Render("~/Content/css")      @*This was moved down to allow for certain bootstrap styling to be over-ridden pertaining to the nav-links*@
 
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="navbar-header">
+      </head>
+      <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navbar-header">
 
-            <a href="@Url.Action("Index", "Home")">
-                <img src="/Content/Images/cropped-TV_2transparent-1.png" />  @*This allows log to act as nav-link and acts as the Home button*@
-            </a>
+                <a href="@Url.Action("Index", "Home")">
+                    <img src="/Content/Images/cropped-TV_2transparent-1.png" />  @*This allows log to act as nav-link and acts as the Home button*@
+                </a>
 
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav" id="navLink-align">
-                    @*id added to over-ride bootstrap css and custom style nav-links*@
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" id="navLink-align">
+                        @*id added to over-ride bootstrap css and custom style nav-links*@
 
-                    @*Custom class move-right added to over-ride bootstrap css and custom style nav-links*@
-                    @*@Html.ActionLink("Home", "Home", "Home")*@  @*Commented out in case change is decided*@
-                    @Html.ActionLink("About", "About", "Home", null, new { @class = "nav-item nav-link active move-right" })
-                    @Html.ActionLink("Ensemble", "Ensemble", "Home", null, new { @class = "nav-item nav-link active move-right" })   @*Link for Ensemble view.  Needs Ensemble                        view created*@
-                    @Html.ActionLink("On Stage", "Index", "Production", null, new { @class = "nav-item nav-link active move-right" })   @* Link for OnStage view. *@
+                        @*Custom class move-right added to over-ride bootstrap css and custom style nav-links*@
+                        @*@Html.ActionLink("Home", "Home", "Home")*@  @*Commented out in case change is decided*@
+                        @Html.ActionLink("About", "About", "Home", null, new { @class = "nav-item nav-link active move-right" })
+                        @Html.ActionLink("Ensemble", "Ensemble", "Home", null, new { @class = "nav-item nav-link active move-right" })   @*Link for Ensemble view.  Needs                                 Ensemble view created*@
+                        @Html.ActionLink("On Stage", "Index", "Production", null, new { @class = "nav-item nav-link active move-right" })   @* Link for OnStage view. *@
 
-                    @Html.Partial("_LoginPartial")
+                        @Html.Partial("_LoginPartial")
 
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
