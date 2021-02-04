@@ -75,6 +75,8 @@ one of the models and styling the pages.  The web application was for a local ac
 
 ### Create Modal Partial View
  I added a partial view to the shared folder in order to create a reusable Modal for the website so any Modals used would be consistant across the site.  The Modal was not being implemented, however I did test it to make sure it would display upon request.  I added temp photos for testing purposes.
+ 
+ ![Create Modal Partial View](https://github.com/TB9652/Theatre-Vertigo-Internship/blob/main/NavBar.PNG)
 
                               <!-- Button trigger modal -->
                               @*<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
