@@ -130,5 +130,28 @@ one of the models and styling the pages.  The web application was for a local ac
                                       public bool IsCurrent { get; set; }
                                 
 
-### CRUD for Production
+### CRUD Functionality for Production
+ After scaffolding the controller, I tested the created views, Create, Delete, Details, Edit and Index.  In order to make the input fields look uniform, I reorganized the fields so they were aligned into two separate columns and centered in each column. I added placeholders to the input fields and created custom classes to style the fields with hover effect and on-click effects.  I changed the Production Description field to a text box and increased its size to allow the user to completely view the text they were entering and limited the amount of text to 1000 characters and moved both buttons so they were centered underneath the input fields.
+ 
 ![Create Modal Partial View](https://github.com/TB9652/Theatre-Vertigo-Internship/blob/main/CRUD%20and%20styling.PNG)
+
+                                       <div class="row">
+                                       <div class="col-md-4 mx-md-auto t">
+
+
+                                         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                         <div class="form-group">
+                                           @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
+                                           <div class="col-md-10">
+                                             @Html.EditorFor(model => model.Title, new { htmlAttributes = new { placeholder = "Enter Production Title", @class = "form-control input-focus-style" } })
+                                             @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                                           </div>
+                                         </div>
+
+                                         <div class="form-group">
+                                           @Html.LabelFor(model => model.Playwright, htmlAttributes: new { @class = "control-label col-md-2" })
+                                           <div class="col-md-10">
+                                             @Html.EditorFor(model => model.Playwright, new { htmlAttributes = new { placeholder = "Enter Playwright", @class = "form-control input-focus-style" } })
+                                             @Html.ValidationMessageFor(model => model.Playwright, "", new { @class = "text-danger" })
+                                           </div>
+                                         </div>                          
