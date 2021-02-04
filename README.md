@@ -47,7 +47,7 @@ one of the models and styling the pages.  The web application was for a local ac
 
  Using the scaffolded NavBar as a template, I added the theater comapny's logo and made it a link back to the home page.  In the layout.cshtml file I moved the following code "@Styles.Render("~/Content/css")" so I could later over-ride the any bootstrap styling with my own CSS styling in the Site.css file then restructured the sacqffolded code so all navlinks were rendered in the same area of the navbar.  I added custom classes to apply CSS styling to the navbar.
  
- ![Create Navbar](https://github.com/TB9652/Theatre-Vertigo-Internship/blob/main/Navbar.PNG)
+ ![Create Navbar](https://github.com/TB9652/Theatre-Vertigo-Internship/blob/main/NavBar.PNG)
 
  
          
