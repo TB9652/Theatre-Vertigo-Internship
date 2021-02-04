@@ -18,7 +18,6 @@ one of the models and styling the pages.  The web application was for a local ac
 ## Front End Stories
 * [Create Navbar](#create-navbar)
 * [Create Modal Partial View](#create-modal-partial-view)
-* [Create Production entity Model](#create-production-entity-model)
 * [CRUD Functionality for Production](#CRUD-functionality-for-production)
 
 ### Seed Production Database
