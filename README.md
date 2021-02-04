@@ -19,7 +19,7 @@ one of the models and styling the pages.  The web application was for a local ac
 * [Create Navbar](#create-navbar)
 * [Create Modal Partial View](#create-modal-partial-view)
 * [Create Production entity Model](#create-production-entity-model)
-* [CRUD for Production](#CRUD-for-production)
+* [CRUD Functionality for Production](#CRUD-functionality-for-production)
 
 ### Seed Production Database
  This database was seeded with test data using code first migration.  The test data consisted for fifteen rows and eleven columns of data meant to be representative of the type of data you would expect to see on a theatre company's website.  Even though DateTime would format both a date and a time for each property within the database, I only wanted for date to be dispalyed for the opening/closing date and only time for the Matinee and Evening showtimes when displayed on the web page so I added code to alter the display format.
@@ -130,4 +130,5 @@ one of the models and styling the pages.  The web application was for a local ac
                                       public bool IsCurrent { get; set; }
                                 
 
+### CRUD for Production
 ![Create Modal Partial View](https://github.com/TB9652/Theatre-Vertigo-Internship/blob/main/CRUD%20and%20styling.PNG)
