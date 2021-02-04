@@ -128,3 +128,5 @@ one of the models and styling the pages.  The web application was for a local ac
                                       public int Season { get; set; }
                                       public bool IsCurrent { get; set; }
                                 
+
+![Create Modal Partial View](https://github.com/TB9652/Theatre-Vertigo-Internship/blob/main/CRUD%20and%20styling.PNG)
