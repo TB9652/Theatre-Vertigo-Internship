@@ -23,7 +23,7 @@ one of the models and styling the pages.  The web application was for a local ac
 ### Seed Production Database
  This database was seeded with test data using code first migration.  The test data consisted for fifteen rows and eleven columns of data meant to be representative of the type of data you would expect to see on a theatre company's website.  Even though DateTime would format both a date and a time for each property within the database, I only wanted for date to be dispalyed for the opening/closing date and only time for the Matinee and Evening showtimes when displayed on the web page so I added code to alter the display format.
  
- ![Seed Productin Database](/Theatre-Vertigo-Internship/Database seed.png)
+ ![Seed Productin Database](http://url/to/img.png)
  
                             
                                      context.Productions.AddOrUpdate(x => x.ProductionId,
