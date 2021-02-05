@@ -4,18 +4,18 @@ Code snippets and screen shots from project website
 # Live Project
 
 ## Introduction
- For the last two weeks in the C# course at The Tech Academy, I worked with several other students developing a full-scale ASP.Net MVC and Entity Framework Web application.  
+ For my two week sprint on my Internship with Prosper IT Consulting, I worked with several other students developing a full-scale ASP.Net MVC and Entity Framework Web application.  
 Using the Scrum/Agile project management methodology, I attended the sprint planning meeting , daily scrum meetings as well as the sprint retrospective.  Though the main part of the application was scaffolded using Entity Framework, there were ample opportunitiesDuring the two week
 sprint, I worked on front-end and back-end stories of varying difficluties to include using code first migration to seed the database with test data and creating/modifying
 one of the models and styling the pages.  The web application was for a local actor's theater in Portland called Theatre Vertigo.
 
   Below are descriptions of the stories I worked on, along with code snippets, navigation links and screenshots. 
 
-## Back End Stories
+## Back End Stories(Tasks)
 * [Seed Production Database](#seed-production-database)
 * [Create Production entity Model](#create-production-entity-model)
 
-## Front End Stories
+## Front End Stories(Tasks)
 * [Create Navbar](#create-navbar)
 * [Create Modal Partial View](#create-modal-partial-view)
 * [CRUD Functionality for Production](#CRUD-functionality-for-production)
